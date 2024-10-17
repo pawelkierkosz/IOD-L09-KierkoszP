@@ -1,0 +1,47 @@
+﻿<project name="bank-zbozowy" default="init">
+
+	<path id="jetty.cp">
+		<fileset dir="..\jetty"/>
+	</path>
+	<path id="lib.cp">
+		<fileset dir="lib"/>
+		<pathelement location="Freemarker"/>
+		<pathelement location="Servlet-Api"/>
+		<path refid="jetty.cp"/>
+	</path>
+	<path id="dist.cp">
+		<path refid="lib.cp"/>
+		<pathelement location="dist\bank.jar"/>
+	</path>
+
+
+	<target name="init">
+		<mkdir dir="bin"/>
+		<mkdir dir="dist"/>
+	</target>
+	<target name="compile" depends="init">
+		<javac srcdir="src" destdir="bin"
+			   includeantruntime="false" encoding="utf-8" classpathref="lib.cp"/>
+	</target>
+	<target name="copy" depends="init">
+		<copy todir="bin">
+			<fileset dir="res"/>
+		</copy>
+	</target>
+	<target name="dist" depends="compile,copy,init">
+		<jar destfile="dist\bank.jar">
+			<fileset dir="bin"/>
+		</jar>
+	</target>
+	<target name="clean">
+		<delete dir="bin"/>
+	</target>
+	<target name="clean-all" depends="clean">
+		<delete dir="dist"/>
+	</target>
+	<target name="run" depends="dist">
+		<java
+				classname="put.io.selenium.atm.SimpleServer"
+				classpathref="dist.cp" />
+	</target>
+</project>
