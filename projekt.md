@@ -167,7 +167,7 @@ Aukcję wygrywa ten z [Kupujących](#ac2), który w momencie jej zakończenia (u
 ## Macierz CRUDL
 
 
-| Przypadek użycia                  | Aukcja (BO1) | Produkt (BO2) | Płatność | Kupujący | Sprzedający |
+| Przypadek użycia                  | Aukcja | Produkt | Płatność | Kupujący | Sprzedający |
 |-----------------------------------|--------------|---------------|----------|----------|-------------|
 | UC1: Wystawienie produktu         | C, R         | C, R          |          | R        | R           |
 | UC2: Złożenie oferty zakupu       | R, U         | R             |          | C, R, U  | R           |
