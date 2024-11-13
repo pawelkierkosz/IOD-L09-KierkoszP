@@ -152,6 +152,18 @@ Aukcja jest formą zawierania transakcji kupna-sprzedaży, w której Sprzedając
 
 Fizyczny lub cyfrowy obiekt, który ma zostać sprzedany w ramach aukcji.
 
+### BO3: Płatność
+
+Płatność reprezentuje transakcję pieniężną, której celem jest przekazanie środków od kupującego do sprzedającego za wygrany produkt.
+
+### BO4: Kupujący
+
+Kupujący to użytkownik systemu, który uczestniczy w aukcjach, składając oferty na produkty, które go interesują.
+
+### BO5: Sprzedający
+
+Sprzedający to użytkownik systemu, który wystawia swoje produkty na aukcje, oczekując na oferty kupujących.
+
 ## Reguły biznesowe
 
 <a id="br1"></a>
