@@ -1,1 +1,1 @@
-Bartłomiej Rudowicz 155993, Paweł Kierkosz 155995
+Paweł Kierkosz 155995
