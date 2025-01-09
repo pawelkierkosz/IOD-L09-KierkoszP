@@ -1,9 +1,0 @@
-3.1 Testy mogłyby przestać działać, ponieważ instancja klasy Calculator miałaby dłuższy czas życia, co mogłoby powodować problemy z zachowaniem danych pomiędzy testami.
-
-4.1 Pierwszy test (test1) zostanie sklasyfikowany jako błąd (Error), natomiast drugi (test2) zostanie oznaczony jako porażka (Failure).
-
-4.2 JUnit zakłada, że obiektem, który zostanie zgłoszony w przypadku niepowodzenia testu, jest instancja klasy Exception.
-
-5.1 Analizowane testowanie opiera się na dostępie do struktury kodu, więc jest to testowanie białoskrzynkowe (whitebox).
-
-5.2 W metodzie calculate można wyróżnić cztery różne ścieżki wykonywania programu.
