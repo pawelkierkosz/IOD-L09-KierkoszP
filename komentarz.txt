@@ -1,0 +1,13 @@
+Zadanie 1
+Przed modyfikacją:
+Średni czas odpowiedzi: 2256
+Przepustowość: 1.3/sec
+
+Po modyfikacji: 
+Średni czas odpowiedzi: 29
+Przepustowość: 1.9/sec
+
+Zamiast wywoływać metodę averageSpendings() w każdej iteracji, wykonałem jej wywołanie tylko raz przed rozpoczęciem pętli, przypisując wynik do zmiennej. Dzięki temu znacząco obniżyłem złożoność obliczeniową.
+
+Zadanie 2
+Zalecana ilość drukarek to 29. Przepustowość zwiększy się wtedy do ok 5.8/sec
